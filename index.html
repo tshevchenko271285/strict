@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>STRICT</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+	<header class="header">
+		<a href="#" class="header__logo">
+			<img class="header__icon" src="img/icon.png">
+			<div class="header__name-site">STRICT</div>
+		</a>
+	</header>
+	<div class="banner">
+		<div class="banner__image">
+			<img class="responsive" src="img/banner__image.jpg" alt="">
+		</div>
+		<div class="banner__content">
+			<h1 class="banner__title">STRICT</h1>
+			<p class="banner__text">
+				STRICT is a responsive theme with a a clean and minimal look.
+			</p>
+			<div class="banner__btn">Call to action</div>
+			<div class="banner__down-btn" id="banner__down-btn">
+				<i class="fa fa-chevron-down" aria-hidden="true"></i>
+			</div>
+		</div>
+	</div>
+	<div class="simple">
+		<h2 class="simple__title">Simple & pure design.</h2>
+		<p class="simple__text">
+			Designers everywhere gush with admiration upon seeing a web design and exclaim "its beautiful, it's so clean!". There are a countless number of webdesign round-ups dedicated to 'clean' design and it is a term thrown around quite a bit in the web design community. It can be easy to spot a good example of clean design.
+		</p>
+	</div>
+	<div class="features">
+			<div class="feature__item">
+				<div class="feature__icon feature__icon_blue">
+					<i class="fa fa-mobile" aria-hidden="true"></i>
+				</div>
+				<h3 class="feature__title">Optimized for all devices</h3>
+				<p class="feature__text">
+					STRICT has been designed to be fully responsive on all devices
+				</p>
+			</div>
+			<div class="feature__item">
+				<div class="feature__icon feature__icon_blue">
+					<i class="fa fa-paper-plane" aria-hidden="true"></i>
+				</div>
+				<h3 class="feature__title">
+					Clean & Minimal Design
+				</h3>
+				<p class="feature__text">
+					This multipurpose theme is especially created to be used for different projects.
+				</p>
+			</div>
+			<div class="feature__item">
+				<div class="feature__icon feature__icon_blue">
+					<i class="fa fa-bullhorn" aria-hidden="true"></i>
+				</div>
+				<h3 class="feature__title">Font Awesome Icon</h3>
+				<p class="feature__text">
+					This multipurpose theme is especially created to be used for different projects.
+				</p>
+			</div>
+	</div>
+
+	<!-- 
+		Gallery Angular App 
+							-->
+<gallery ng-app="gallery"></gallery>
+
+
+	<div class="support" id="support">
+		<img class="responsive" src="img/bgsupport.jpg" alt="">
+		<div class="support__content">
+			<h2 class="support__title">
+				Stay with us
+			</h2>
+			<p class="support__text">
+				We ensure quailty & support
+			</p>
+			<form action="test.php" class="support__form" method="GET">
+				<input class="support__input" type="name" name="name" placeholder="Full Name">
+				<input class="support__input" type="email" name="email" placeholder="Email Address">
+				<textarea class="support__textarea" name="text" placeholder="Message"></textarea>
+				<div class="support__ptn-group">
+					<div class="support__subscribe">
+						<input id="x" class="support__checkbox" type="checkbox" name="subscribe">
+						<label for="subscribe">Subscribe Newsletter</label>
+					</div>
+					<input class="support__btn" type="submit" value="Send">
+				</div>
+			</form>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="footer__copyright">Copyritht 2014, STRICT</div>
+		<div class="footer__social">
+			<div class="footer__socialItem">
+				<i class="fa fa-facebook" aria-hidden="true"></i>
+			</div>			
+			<div class="footer__socialItem">
+				<i class="fa fa-twitter" aria-hidden="true"></i>
+			</div>			
+			<div class="footer__socialItem">
+				<i class="fa fa-google-plus" aria-hidden="true"></i>
+			</div>			
+			<div class="footer__socialItem">
+				<i class="fa fa-linkedin" aria-hidden="true"></i>
+			</div>			
+		</div>
+	</footer>
+	<script src="js/angular.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="gallery/gallery.js"></script>
+<script>
+$('#banner__down-btn').on('click', function(){
+	console.log($('#support').offset());
+});
+	
+</script>
+</body>
+</html>

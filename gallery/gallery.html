@@ -1,0 +1,27 @@
+	<div class="gallery" ng-controller="galleryController">
+		<h2 class="gallery__title">
+			Showcase your work like a pro.
+		</h2>
+		<p class="gallery__text">
+			Contact me if you like my work
+		</p>
+		<div class="gallery__item" ng-repeat="image in images">
+			<div class="gallary__image">
+				<img ng-src="{{image}}" alt="gallery strict">
+			</div>
+			<div class="gallary__hover">
+				<div class="gallary__button" ng-click="openImage(image)">
+					<i class="fa fa-search-plus" aria-hidden="true"></i>
+				</div>
+				<div class="gallary__button">
+					<i class="fa fa-link" aria-hidden="true"></i>
+				</div>
+			</div>
+		</div>
+		<div class="gallery__viewImage" ng-if="viewImage.view" ng-click="closeImage()">
+			<div class="viewImage__image">
+				<i class="fa fa-times" aria-hidden="true" ng-click="closeImage()"></i>
+				<img ng-src="{{viewImage.link}}" alt="Gallery View Image">
+			</div>
+		</div>
+	</div>
